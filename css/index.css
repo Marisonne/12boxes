@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+.center {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  border: none;
+}
+
+.container {
+  display: grid;
+  border: 1px solid magenta;
+  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: repeat(4, 1fr); same sorter*/
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: repeat(4, 1fr); same sorter*/
+  padding: 0;
+  width: 80%;
+  margin: 20px auto;
+}
+
+section {
+  border: 1px solid purple;
+  text-align: center;
+  padding: 20px;
+}
+
+/*second task*/
+
+div {
+  border: 1px solid purple;
+  text-align: center;
+  padding: 20px;
+}
+
+.two {
+  background-color: mediumslateblue;
+  grid-column: 2 / span 2; /* started at 2 and/ is 2 long horizontal*/
+}
+
+.six {
+  background-color: olivedrab;
+  grid-column: 3 / span 2; /* started at 3 and/ is 2 long horizontal*/
+}
+
+.nine {
+  background-color: goldenrod;
+  grid-row: 3 / span 2; /* started at 3 and/ is 2 long vertical*/
+}
+
+.ten {
+  background-color: #8d3e82;
+  grid-row: 3 / span 2; /* started at 3 / is 2 long vertical*/
+}
+
+.seven {
+  grid-area: 3 / 1; /* sit on 3 horizontal / 1 vertical*/
+}
+
+.eight {
+  grid-area: 3 / 3; /* sit on 3 horizontal / 3 vertical*/
+}
